@@ -13,10 +13,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--charcoal);
     color: var(--cream);
     font-family: var(--font-main);
+}
+
+section {
+    scroll-margin-top: 80px;
 }
 
 h1 {
@@ -89,15 +97,21 @@ Hero Page
     background-size: 200px 200px;
 }
 
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
 .hero-text h1 {
-    font-family: var(--font-hero);
     font-size: clamp(3rem, 7vw, 6rem);
     line-height: 1.1;
     margin-bottom: 1.5rem;
 }
 
 .hero-text p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     color: var(--muted);
     max-width: 480px;
@@ -106,6 +120,7 @@ Hero Page
 }
 
 .cta-btn {
+    align-self: flex-start; /* add this line */
     display: inline-block;
     text-decoration: none;
     background-color: var(--orange);
@@ -121,9 +136,152 @@ Hero Page
     opacity: 0.85;
 }
 
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-image img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+    width: 900px;
+    height: 900px;
+
     border-radius: 8px;
+}
+
+/************************************************
+ABOUT
+*************************************************/
+#about {
+    padding: 10rem 6rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    align-items: start;
+    gap: 4rem;
+    border-top: 1px solid rgba(245, 240, 232, 0.1);
+}
+
+.about-heading h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+    position: sticky;
+    top: 6rem;
+}
+
+.about-intro {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+}
+
+.about-body {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.9;
+    max-width: 580px;
+}
+
+.about-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(245, 240, 232, 0.1);
+}
+
+.stat h3 {
+    font-family: var(--font-hero);
+    font-size: 2.5rem;
+    color: var(--orange);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+}
+
+.stat p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.about-image {
+    margin-top: 2rem;
+}
+
+.about-image img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 8px;
+    filter: grayscale(20%);
+}
+
+#about {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Big faint W in the background */
+#about::before {
+    content: 'W';
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-family: var(--font-hero);
+    font-size: 15rem;
+    font-weight: 900;
+    color: rgba(249, 115, 22, 0.06);
+    line-height: 1;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Decorative circles top right */
+#about::after {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid rgba(249, 115, 22, 0.1);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Vertical orange accent line */
+.about-heading {
+    position: relative;
+    z-index: 1;
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    border-left: 3px solid var(--orange);
+}
+
+/* Keep content above background elements */
+.about-content {
+    position: relative;
+    z-index: 1;
+}
+
+.available-badge {
+    display: inline-block;
+    background: rgba(249, 115, 22, 0.15);
+    color: var(--orange);
+    font-family: var(--font-main);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    margin-bottom: 1rem;
 }
