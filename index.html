@@ -6,6 +6,8 @@
     <title>Wilson Maselle - Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -23,9 +25,20 @@
         </ul>
     </nav>
     <section id="hero">
+        <!-- Background decorative elements -->
+        <div class="geo-circle-lg" style="top:-80px; right:15%;"></div>
+        <div class="geo-circle-sm" style="bottom:100px; left:5%;"></div>
+        <div class="geo-circle-sm" style="top:50px; left:40%;"></div>
+        <div class="geo-ring" style="bottom:80px; right:8%;"></div>
+        <div class="geo-ring" style="top:30px; left:20%;"></div>
+        <div class="geo-dot" style="top:100px; left:33%;"></div>
+        <div class="geo-dot" style="bottom:150px; right:25%;"></div>
+        <div class="geo-dot" style="top:200px; right:40%;"></div>
+        <div class="geo-line-v" style="top:0; left:25%;"></div>
+        <div class="geo-line-h" style="bottom:20%; left:10%;"></div>
         <div class="hero-text">
             <h1>I'm Wilson <br><span style="color: var(--orange)">Maselle</span></h1>
-            <p>A computer science student and Division 1 athlete at mercer university aspiring to be a software engineer.</p>
+            <p>A computer science student and Division 1 athlete at Mercer University aspiring to be a software engineer.</p>
             <a href="#projects" class="cta-btn">View my work!</a>
         </div>
         <div class="hero-image">
@@ -62,37 +75,58 @@
     </section>
 
     <section id="skills">
-        <div class="skills-text">
-            <h1>Skills</h1>
-            <div class="lang-text">
+        <!-- Background decorative elements -->
+        <div class="geo-circle-lg" style="top:-100px; right:-80px;"></div>
+        <div class="geo-circle-lg" style="bottom:-120px; left:-100px;"></div>
+        <div class="geo-circle-sm" style="top:40px; right:80px;"></div>
+        <div class="geo-circle-sm" style="bottom:60px; left:60px;"></div>
+        <div class="geo-ring" style="top:20px; left:30%;"></div>
+        <div class="geo-ring" style="bottom:30px; right:25%;"></div>
+        <div class="geo-dot" style="top:60px; left:45%;"></div>
+        <div class="geo-dot" style="top:120px; right:30%;"></div>
+        <div class="geo-dot" style="bottom:80px; left:55%;"></div>
+        <div class="geo-dot" style="bottom:40px; right:40%;"></div>
+        <div class="geo-line-v" style="top:0; left:38%;"></div>
+        <div class="geo-line-h" style="bottom:25%; right:10%;"></div>
+
+        <div class="skills-heading">
+            <span class="skills-badge">What I use</span>
+            <h1>My <span style="color: var(--orange)">Skills</span></h1>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-category">
                 <h2>Languages</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>HTML5/CSS3</li>
-                </ul>            
+                <ul class="skill-list">
+                    <li><i class="devicon-python-plain colored"></i><span>Python</span></li>
+                    <li><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></li>
+                    <li><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></li>
+                    <li><i class="devicon-html5-plain colored"></i><span>HTML5</span></li>
+                    <li><i class="devicon-css3-plain colored"></i><span>CSS3</span></li>
+                    <li><i class="devicon-dart-plain colored"></i><span>Dart</span></li>
+                </ul>
             </div>
 
-            <div class="frame-text">
+            <div class="skill-category">
                 <h2>Frameworks</h2>
-                <ul>
-                    <li>Flask</li>
-                    <li>React</li>
-                    <li>React Native</li>
-                    <li>Django</li>
-                </ul>            
+                <ul class="skill-list">
+                    <li><i class="devicon-flask-original"></i><span>Flask</span></li>
+                    <li><i class="devicon-react-original colored"></i><span>React</span></li>
+                    <li><i class="devicon-react-original colored"></i><span>React Native</span></li>
+                    <li><i class="devicon-django-plain"></i><span>Django</span></li>
+                    <li><i class="devicon-flutter-plain colored"></i><span>Flutter</span></li>
+                </ul>
             </div>
-            
-            <div class="tools-text">
+
+            <div class="skill-category">
                 <h2>Tools</h2>
-                <ul>
-                    <li>Git</li>
-                    <li>Github</li>
-                    <li>Docker</li>
-                    <li>Postman</li>
-                    <li>VS Code</li>
-                </ul>                            
+                <ul class="skill-list">
+                    <li><i class="devicon-git-plain colored"></i><span>Git</span></li>
+                    <li><i class="devicon-github-original"></i><span>GitHub</span></li>
+                    <li><i class="devicon-docker-plain colored"></i><span>Docker</span></li>
+                    <li><i class="devicon-postman-plain colored"></i><span>Postman</span></li>
+                    <li><i class="devicon-vscode-plain colored"></i><span>VS Code</span></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -102,16 +136,65 @@
     <section id="experience"></section>
 
     <section id="contact">
-        <div class="contact-text">
-            <h1>Contact Info</h1>
-            <ul>
-                <li>Email: maselle.wilson@gmail.com</li>
-                <li>Phone: (770) 313-2559</li>
-                <li><a href="https://www.linkedin.com/in/wilson-maselle-04a293333/">LinkedIn</a></li>
-                <li><a href="https://github.com/wilsmase">Github</a></li>
-            </ul>
+        <div class="contact-heading">
+            <span class="contact-badge">Get in touch</span>
+            <h1>Contact <span style="color: var(--orange)">Me</span></h1>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-left">
+                <p class="contact-intro">Have a project in mind or want to talk opportunities? I'm always open to new conversations.</p>
+                <div class="contact-links">
+                    <a href="mailto:maselle.wilson@gmail.com" class="contact-link">
+                        <span class="link-label">Email</span>
+                        <span class="link-value">maselle.wilson@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/wilson-maselle-04a293333/" target="_blank" class="contact-link">
+                        <span class="link-label">LinkedIn</span>
+                        <span class="link-value"><i class="fa-brands fa-linkedin"></i> wilson-maselle</span>
+                    </a>
+                    <a href="https://github.com/wilsmase" target="_blank" class="contact-link">
+                        <span class="link-label">GitHub</span>
+                        <span class="link-value"><i class="fa-brands fa-github"></i> wilsmase</span>
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@email.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Internship opportunity..." required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Tell me more..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
     </section>
 
+    <footer>
+        <p>Designed & Built by <span style="color: var(--orange)">Wilson Maselle</span></p>
+        <div class="footer-links">
+            <a href="https://github.com/wilsmase" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/wilson-maselle-04a293333/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        <p class="footer-copy">© 2025 Wilson Maselle</p>
+    </footer>
 </body>
 </html>
