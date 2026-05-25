@@ -461,7 +461,305 @@ SKILLS
 .devicon-github-original {
     color: var(--cream);
 }
+/************************************************
+EXPERIENCE
+*************************************************/
+#experience {
+    padding: 10rem 6rem;
+    border-top: 1px solid rgba(245, 240, 232, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 4rem;
+    align-items: start;
+    position: relative;
+    overflow: hidden;
+}
 
+.exp-heading {
+    position: sticky;
+    top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--orange);
+}
+
+.exp-badge {
+    display: inline-block;
+    background: rgba(249, 115, 22, 0.15);
+    color: var(--orange);
+    font-family: var(--font-main);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(249, 115, 22, 0.25);
+    margin-bottom: 1rem;
+}
+
+.exp-heading h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.exp-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Timeline blocks */
+.exp-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.exp-block {
+    border-left: 1px solid rgba(245, 240, 232, 0.1);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.exp-block::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--orange);
+}
+
+.exp-role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 0.2rem;
+    font-family: var(--font-main);
+}
+
+.exp-company {
+    font-size: 0.85rem;
+    color: var(--orange);
+    margin-bottom: 0.2rem;
+    font-family: var(--font-main);
+}
+
+.exp-date {
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-main);
+}
+
+.exp-bullets {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.exp-bullets li {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.6;
+    display: flex;
+    gap: 8px;
+    font-family: var(--font-main);
+    font-weight: 300;
+}
+
+.exp-bullets li::before {
+    content: '—';
+    color: var(--orange);
+    flex-shrink: 0;
+}
+
+.exp-divider {
+    border: none;
+    border-top: 1px solid rgba(245, 240, 232, 0.06);
+    margin: 0.5rem 0;
+}
+
+/* Subsections */
+.exp-subsection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.exp-sub-heading {
+    font-family: var(--font-main);
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--orange);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+/* Project cards */
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+}
+
+.project-card {
+    background: rgba(245, 240, 232, 0.02);
+    border: 1px solid rgba(245, 240, 232, 0.07);
+    border-radius: 8px;
+    padding: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, var(--orange), transparent);
+}
+
+.project-placeholder {
+    border: 1px dashed rgba(249, 115, 22, 0.2);
+    background: rgba(249, 115, 22, 0.03);
+}
+
+.placeholder-label {
+    font-family: var(--font-main);
+    font-size: 0.7rem;
+    color: rgba(249, 115, 22, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.project-title {
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--cream);
+}
+
+.project-desc {
+    font-family: var(--font-main);
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: auto;
+}
+
+.tag {
+    font-family: var(--font-main);
+    font-size: 0.65rem;
+    color: var(--orange);
+    background: rgba(249, 115, 22, 0.1);
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.project-link {
+    font-family: var(--font-main);
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: var(--orange);
+}
+
+/* Soon come */
+.soon-come {
+    border: 1px dashed rgba(245, 240, 232, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.soon-come-title {
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cream);
+}
+
+.soon-come-sub {
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-weight: 300;
+}
+/* Faint EXP background text */
+#experience::before {
+    content: 'EXP';
+    position: absolute;
+    bottom: -2rem;
+    right: -1rem;
+    font-family: var(--font-hero);
+    font-size: 14rem;
+    font-weight: 900;
+    color: rgba(249, 115, 22, 0.04);
+    line-height: 1;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Make sure content sits above background */
+.exp-heading,
+.exp-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Glowing timeline line */
+.exp-block::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, rgba(249, 115, 22, 0.6), rgba(249, 115, 22, 0.1));
+    box-shadow: 0 0 6px rgba(249, 115, 22, 0.3);
+}
+
+.exp-block::before {
+    box-shadow: 0 0 8px rgba(249, 115, 22, 0.6);
+    z-index: 1;
+}
 /************************************************
 CONTACT
 *************************************************/
