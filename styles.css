@@ -148,13 +148,11 @@ Hero Page
     z-index: 1;
 }
 
-.hero-image img {
-    width: 900px;
-    height: 900px;
+#heroCanvas {
+    width: 100%;
+    height: 1000px;
 
-    border-radius: 8px;
 }
-
 /************************************************
 ABOUT
 *************************************************/
