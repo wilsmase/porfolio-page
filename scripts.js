@@ -264,7 +264,7 @@ const SPRITE_KEYS = Object.keys(SPRITES);
 // COLOR MAP
 // =============================================
 const COLORS = {
-    0: null,
+    0: '#7A3808',
     1: '#C45A0A',
     2: '#F97316',
     3: '#FFB347',
@@ -285,7 +285,7 @@ function drawSprite(spriteKey, x, y) {
 
     grid.forEach((row, rowIndex) => {
         row.forEach((cell, colIndex) => {
-            if (cell !== 0) {
+            if (COLORS[cell]) {
                 ctx.fillStyle = COLORS[cell];
                 ctx.fillRect(
                     x + colIndex * PIXEL,
